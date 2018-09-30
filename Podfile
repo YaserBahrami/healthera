@@ -6,6 +6,7 @@ target 'Healthera' do
   use_frameworks!
   pod 'Moya'
   pod 'SwiftyJSON'
+  pod 'KeychainSwift'
   # Pods for Healthera
 
   target 'HealtheraTests' do
