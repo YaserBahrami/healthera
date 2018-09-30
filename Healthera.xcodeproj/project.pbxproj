@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E882AB13904F48CFD0AE46A /* Pods_HealtheraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DEC611F2332E4B8D742816 /* Pods_HealtheraUITests.framework */; };
 		4396EC312160F19B008C4688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC302160F19B008C4688 /* AppDelegate.swift */; };
 		4396EC332160F19B008C4688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC322160F19B008C4688 /* ViewController.swift */; };
 		4396EC362160F19B008C4688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396EC342160F19B008C4688 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		4396EC3B2160F19E008C4688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396EC392160F19E008C4688 /* LaunchScreen.storyboard */; };
 		4396EC462160F19F008C4688 /* HealtheraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC452160F19F008C4688 /* HealtheraTests.swift */; };
 		4396EC512160F19F008C4688 /* HealtheraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC502160F19F008C4688 /* HealtheraUITests.swift */; };
+		68748CCE790912FC58E1D605 /* Pods_Healthera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781DB61134AC01342D7D7822 /* Pods_Healthera.framework */; };
+		7C9EA700E55F2FE7263AFAA5 /* Pods_HealtheraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D026C2FC51EB763A66F78 /* Pods_HealtheraTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E755AF053F68F72AF2F5004 /* Pods-Healthera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Healthera/Pods-Healthera.debug.xcconfig"; sourceTree = "<group>"; };
+		42021AE62E37B3DC6C216E56 /* Pods-Healthera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthera.release.xcconfig"; path = "Pods/Target Support Files/Pods-Healthera/Pods-Healthera.release.xcconfig"; sourceTree = "<group>"; };
 		4396EC2D2160F19B008C4688 /* Healthera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4396EC302160F19B008C4688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4396EC322160F19B008C4688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		4396EC4C2160F19F008C4688 /* HealtheraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealtheraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4396EC502160F19F008C4688 /* HealtheraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealtheraUITests.swift; sourceTree = "<group>"; };
 		4396EC522160F19F008C4688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D04A7D88AE1255C8FE1CA4 /* Pods-HealtheraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraTests/Pods-HealtheraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F42E0CC40CC0F8FEBAAB336 /* Pods-HealtheraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraUITests/Pods-HealtheraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		781DB61134AC01342D7D7822 /* Pods_Healthera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		809D026C2FC51EB763A66F78 /* Pods_HealtheraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealtheraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3DEC611F2332E4B8D742816 /* Pods_HealtheraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealtheraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1E343B5446207A26D2546A /* Pods-HealtheraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraTests/Pods-HealtheraTests.release.xcconfig"; sourceTree = "<group>"; };
+		F165D9C123796B5BDCB4D851 /* Pods-HealtheraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraUITests/Pods-HealtheraUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68748CCE790912FC58E1D605 /* Pods_Healthera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9EA700E55F2FE7263AFAA5 /* Pods_HealtheraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E882AB13904F48CFD0AE46A /* Pods_HealtheraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				4396EC442160F19F008C4688 /* HealtheraTests */,
 				4396EC4F2160F19F008C4688 /* HealtheraUITests */,
 				4396EC2E2160F19B008C4688 /* Products */,
+				76665C3B051D9340C9BFEE76 /* Pods */,
+				D7F764E3B990D1E4AE062488 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +114,10 @@
 		4396EC2F2160F19B008C4688 /* Healthera */ = {
 			isa = PBXGroup;
 			children = (
+				4396EC5E2160F897008C4688 /* Model */,
+				4396EC5F2160F89C008C4688 /* View */,
+				4396EC612160F8BE008C4688 /* Controller */,
 				4396EC302160F19B008C4688 /* AppDelegate.swift */,
-				4396EC322160F19B008C4688 /* ViewController.swift */,
-				4396EC342160F19B008C4688 /* Main.storyboard */,
 				4396EC372160F19E008C4688 /* Assets.xcassets */,
 				4396EC392160F19E008C4688 /* LaunchScreen.storyboard */,
 				4396EC3C2160F19E008C4688 /* Info.plist */,
@@ -125,6 +143,52 @@
 			path = HealtheraUITests;
 			sourceTree = "<group>";
 		};
+		4396EC5E2160F897008C4688 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4396EC5F2160F89C008C4688 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4396EC342160F19B008C4688 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4396EC612160F8BE008C4688 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4396EC322160F19B008C4688 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76665C3B051D9340C9BFEE76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E755AF053F68F72AF2F5004 /* Pods-Healthera.debug.xcconfig */,
+				42021AE62E37B3DC6C216E56 /* Pods-Healthera.release.xcconfig */,
+				61D04A7D88AE1255C8FE1CA4 /* Pods-HealtheraTests.debug.xcconfig */,
+				BF1E343B5446207A26D2546A /* Pods-HealtheraTests.release.xcconfig */,
+				6F42E0CC40CC0F8FEBAAB336 /* Pods-HealtheraUITests.debug.xcconfig */,
+				F165D9C123796B5BDCB4D851 /* Pods-HealtheraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7F764E3B990D1E4AE062488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				781DB61134AC01342D7D7822 /* Pods_Healthera.framework */,
+				809D026C2FC51EB763A66F78 /* Pods_HealtheraTests.framework */,
+				A3DEC611F2332E4B8D742816 /* Pods_HealtheraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4396EC552160F19F008C4688 /* Build configuration list for PBXNativeTarget "Healthera" */;
 			buildPhases = (
+				5E6B031B81DCC7B6C69B57F8 /* [CP] Check Pods Manifest.lock */,
 				4396EC292160F19B008C4688 /* Sources */,
 				4396EC2A2160F19B008C4688 /* Frameworks */,
 				4396EC2B2160F19B008C4688 /* Resources */,
+				D91553B9AF3886D278852663 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4396EC582160F19F008C4688 /* Build configuration list for PBXNativeTarget "HealtheraTests" */;
 			buildPhases = (
+				D1F016370662DB39804DA593 /* [CP] Check Pods Manifest.lock */,
 				4396EC3D2160F19F008C4688 /* Sources */,
 				4396EC3E2160F19F008C4688 /* Frameworks */,
 				4396EC3F2160F19F008C4688 /* Resources */,
@@ -167,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4396EC5B2160F19F008C4688 /* Build configuration list for PBXNativeTarget "HealtheraUITests" */;
 			buildPhases = (
+				377872DB0D66CC5927007087 /* [CP] Check Pods Manifest.lock */,
 				4396EC482160F19F008C4688 /* Sources */,
 				4396EC492160F19F008C4688 /* Frameworks */,
 				4396EC4A2160F19F008C4688 /* Resources */,
@@ -250,6 +318,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		377872DB0D66CC5927007087 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealtheraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E6B031B81DCC7B6C69B57F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Healthera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F016370662DB39804DA593 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealtheraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D91553B9AF3886D278852663 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Healthera/Pods-Healthera-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Healthera/Pods-Healthera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4396EC292160F19B008C4688 /* Sources */ = {
@@ -430,42 +579,47 @@
 		};
 		4396EC562160F19F008C4688 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E755AF053F68F72AF2F5004 /* Pods-Healthera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = Healthera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.projects.Healthera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		4396EC572160F19F008C4688 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42021AE62E37B3DC6C216E56 /* Pods-Healthera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = Healthera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.projects.Healthera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		4396EC592160F19F008C4688 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D04A7D88AE1255C8FE1CA4 /* Pods-HealtheraTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +641,7 @@
 		};
 		4396EC5A2160F19F008C4688 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1E343B5446207A26D2546A /* Pods-HealtheraTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +663,7 @@
 		};
 		4396EC5C2160F19F008C4688 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F42E0CC40CC0F8FEBAAB336 /* Pods-HealtheraUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +684,7 @@
 		};
 		4396EC5D2160F19F008C4688 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F165D9C123796B5BDCB4D851 /* Pods-HealtheraUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
