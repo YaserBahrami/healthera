@@ -15,6 +15,7 @@
 		4396EC3B2160F19E008C4688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396EC392160F19E008C4688 /* LaunchScreen.storyboard */; };
 		4396EC462160F19F008C4688 /* HealtheraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC452160F19F008C4688 /* HealtheraTests.swift */; };
 		4396EC512160F19F008C4688 /* HealtheraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC502160F19F008C4688 /* HealtheraUITests.swift */; };
+		4396EC66216122C9008C4688 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC65216122C9008C4688 /* Extentions.swift */; };
 		68748CCE790912FC58E1D605 /* Pods_Healthera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781DB61134AC01342D7D7822 /* Pods_Healthera.framework */; };
 		7C9EA700E55F2FE7263AFAA5 /* Pods_HealtheraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D026C2FC51EB763A66F78 /* Pods_HealtheraTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		4396EC4C2160F19F008C4688 /* HealtheraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealtheraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4396EC502160F19F008C4688 /* HealtheraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealtheraUITests.swift; sourceTree = "<group>"; };
 		4396EC522160F19F008C4688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4396EC65216122C9008C4688 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		61D04A7D88AE1255C8FE1CA4 /* Pods-HealtheraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraTests/Pods-HealtheraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F42E0CC40CC0F8FEBAAB336 /* Pods-HealtheraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraUITests/Pods-HealtheraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		781DB61134AC01342D7D7822 /* Pods_Healthera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +116,7 @@
 		4396EC2F2160F19B008C4688 /* Healthera */ = {
 			isa = PBXGroup;
 			children = (
+				4396EC64216122B5008C4688 /* Helper */,
 				4396EC5E2160F897008C4688 /* Model */,
 				4396EC5F2160F89C008C4688 /* View */,
 				4396EC612160F8BE008C4688 /* Controller */,
@@ -164,6 +167,14 @@
 				4396EC322160F19B008C4688 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4396EC64216122B5008C4688 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4396EC65216122C9008C4688 /* Extentions.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		76665C3B051D9340C9BFEE76 /* Pods */ = {
@@ -407,6 +418,7 @@
 			files = (
 				4396EC332160F19B008C4688 /* ViewController.swift in Sources */,
 				4396EC312160F19B008C4688 /* AppDelegate.swift in Sources */,
+				4396EC66216122C9008C4688 /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
