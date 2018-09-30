@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		0E882AB13904F48CFD0AE46A /* Pods_HealtheraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DEC611F2332E4B8D742816 /* Pods_HealtheraUITests.framework */; };
 		4396EC312160F19B008C4688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC302160F19B008C4688 /* AppDelegate.swift */; };
-		4396EC332160F19B008C4688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC322160F19B008C4688 /* ViewController.swift */; };
+		4396EC332160F19B008C4688 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC322160F19B008C4688 /* LoginViewController.swift */; };
 		4396EC362160F19B008C4688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396EC342160F19B008C4688 /* Main.storyboard */; };
 		4396EC382160F19E008C4688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4396EC372160F19E008C4688 /* Assets.xcassets */; };
 		4396EC3B2160F19E008C4688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396EC392160F19E008C4688 /* LaunchScreen.storyboard */; };
 		4396EC462160F19F008C4688 /* HealtheraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC452160F19F008C4688 /* HealtheraTests.swift */; };
 		4396EC512160F19F008C4688 /* HealtheraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC502160F19F008C4688 /* HealtheraUITests.swift */; };
 		4396EC66216122C9008C4688 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC65216122C9008C4688 /* Extentions.swift */; };
+		4396EC6921612BDC008C4688 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC6821612BDC008C4688 /* KeychainAccess.swift */; };
+		4396EC6B21612CAD008C4688 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC6A21612CAD008C4688 /* NetworkProvider.swift */; };
+		439A50BC21613DA300CE4297 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50BB21613DA300CE4297 /* Result.swift */; };
+		439A50BE21613DC600CE4297 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50BD21613DC600CE4297 /* AuthenticationService.swift */; };
 		68748CCE790912FC58E1D605 /* Pods_Healthera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781DB61134AC01342D7D7822 /* Pods_Healthera.framework */; };
 		7C9EA700E55F2FE7263AFAA5 /* Pods_HealtheraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D026C2FC51EB763A66F78 /* Pods_HealtheraTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,7 +46,7 @@
 		42021AE62E37B3DC6C216E56 /* Pods-Healthera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthera.release.xcconfig"; path = "Pods/Target Support Files/Pods-Healthera/Pods-Healthera.release.xcconfig"; sourceTree = "<group>"; };
 		4396EC2D2160F19B008C4688 /* Healthera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4396EC302160F19B008C4688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4396EC322160F19B008C4688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4396EC322160F19B008C4688 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4396EC352160F19B008C4688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4396EC372160F19E008C4688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4396EC3A2160F19E008C4688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,11 @@
 		4396EC502160F19F008C4688 /* HealtheraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealtheraUITests.swift; sourceTree = "<group>"; };
 		4396EC522160F19F008C4688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4396EC65216122C9008C4688 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		4396EC6821612BDC008C4688 /* KeychainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
+		4396EC6A21612CAD008C4688 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		4396EC6C216132A4008C4688 /* Healthera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Healthera.entitlements; sourceTree = "<group>"; };
+		439A50BB21613DA300CE4297 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		439A50BD21613DC600CE4297 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		61D04A7D88AE1255C8FE1CA4 /* Pods-HealtheraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraTests/Pods-HealtheraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F42E0CC40CC0F8FEBAAB336 /* Pods-HealtheraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraUITests/Pods-HealtheraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		781DB61134AC01342D7D7822 /* Pods_Healthera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +125,8 @@
 		4396EC2F2160F19B008C4688 /* Healthera */ = {
 			isa = PBXGroup;
 			children = (
+				4396EC6C216132A4008C4688 /* Healthera.entitlements */,
+				4396EC6721612BB5008C4688 /* Services */,
 				4396EC64216122B5008C4688 /* Helper */,
 				4396EC5E2160F897008C4688 /* Model */,
 				4396EC5F2160F89C008C4688 /* View */,
@@ -164,7 +175,7 @@
 		4396EC612160F8BE008C4688 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4396EC322160F19B008C4688 /* ViewController.swift */,
+				4396EC322160F19B008C4688 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,8 +184,19 @@
 			isa = PBXGroup;
 			children = (
 				4396EC65216122C9008C4688 /* Extentions.swift */,
+				4396EC6821612BDC008C4688 /* KeychainAccess.swift */,
+				439A50BB21613DA300CE4297 /* Result.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		4396EC6721612BB5008C4688 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4396EC6A21612CAD008C4688 /* NetworkProvider.swift */,
+				439A50BD21613DC600CE4297 /* AuthenticationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		76665C3B051D9340C9BFEE76 /* Pods */ = {
@@ -272,6 +294,11 @@
 				TargetAttributes = {
 					4396EC2C2160F19B008C4688 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					4396EC402160F19F008C4688 = {
 						CreatedOnToolsVersion = 10.0;
@@ -418,9 +445,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4396EC332160F19B008C4688 /* ViewController.swift in Sources */,
+				4396EC332160F19B008C4688 /* LoginViewController.swift in Sources */,
+				4396EC6921612BDC008C4688 /* KeychainAccess.swift in Sources */,
 				4396EC312160F19B008C4688 /* AppDelegate.swift in Sources */,
+				439A50BC21613DA300CE4297 /* Result.swift in Sources */,
 				4396EC66216122C9008C4688 /* Extentions.swift in Sources */,
+				4396EC6B21612CAD008C4688 /* NetworkProvider.swift in Sources */,
+				439A50BE21613DC600CE4297 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,13 +627,19 @@
 			baseConfigurationReference = 2E755AF053F68F72AF2F5004 /* Pods-Healthera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Healthera/Healthera.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = Healthera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.projects.Healthera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -613,13 +650,19 @@
 			baseConfigurationReference = 42021AE62E37B3DC6C216E56 /* Pods-Healthera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Healthera/Healthera.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = Healthera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.projects.Healthera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -634,7 +677,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = HealtheraTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.projects.HealtheraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -652,7 +699,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = HealtheraTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.projects.HealtheraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -669,7 +720,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = HealtheraUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.projects.HealtheraUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -686,7 +741,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = HealtheraUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.projects.HealtheraUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
