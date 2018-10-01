@@ -42,4 +42,29 @@ class AuthenticationService{
         }
 
     }
+    
+    func logout(callBack: @escaping (_ result: Bool) -> ()){
+        provider.request(.logout()) { (result) in
+            switch result{
+            case let .success(moyaResponse):
+                let data = moyaResponse.data // Data, your JSON response is probably in here!
+                let statusCode = moyaResponse.statusCode // Int - 200, 401, 500, etc
+                let jsonObj = JSON(data)
+                if statusCode == 200{
+                    
+                    let error = jsonObj["error"]["text"].stringValue
+                    if error != ""{
+                        print("network req failed: \(error)")
+                        callBack(false)
+                        
+                    }else{
+                        callBack(true)
+                    }
+                }
+            case let .failure(error):
+                print("network req failed: \(error.localizedDescription)")
+                callBack(false)
+            }
+        }
+    }
 }

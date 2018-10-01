@@ -10,6 +10,7 @@ import UIKit
 
 class AdherencesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var welcome: UILabel!
     @IBOutlet weak var adherencesTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +20,9 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
 
         let nib = UINib.init(nibName: "AdherencesTableViewCell", bundle: nil)
         self.adherencesTableView.register(nib, forCellReuseIdentifier: "MyCustomCell")
-//
-//        self.adherencesTableView.separatorStyle = .none
-//        self.adherencesTableView.backgroundColor = UIColor.white
+
+        self.adherencesTableView.separatorStyle = .none
+        self.adherencesTableView.backgroundColor = UIColor.clear
 
     }
     
@@ -32,37 +33,37 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
         print(hour)
         
         if hour >= 6 && hour < 12{
-            print("morning")
+            welcome.text = "Good Morning!"
         }else if hour >= 12 && hour < 18{
-            print("afternoon")
+            welcome.text = "Good Afternoon!"
         }else if hour >= 18 && hour < 24{
-            print("evening")
+            welcome.text = "Good Evening!"
         }else{
-            print("night")
+            welcome.text = "Good Night!"
         }
     }
     
     public func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 10
         
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 1
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
     
-//    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 20
-//    }
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20
+    }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! AdherencesTableViewCell
-
+        
         return cell
     }
     
@@ -72,5 +73,19 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
         return v
     }
     
-
+    @IBAction func logOut(_ sender: Any) {
+        
+        
+        AuthenticationService.shared.logout { (result) in
+            if result == true{
+                KeychainAccess.shared.clearKeychains()
+                let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = mainStoryboard.instantiateViewController(withIdentifier: "login")
+                UIApplication.shared.keyWindow?.rootViewController = viewController
+            }
+        }
+        
+        
+    }
+    
 }
