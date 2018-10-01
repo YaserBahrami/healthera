@@ -78,7 +78,9 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
         
         AuthenticationService.shared.logout { (result) in
             if result == true{
+                let device_token = KeychainAccess.shared.getDeviceToken()
                 KeychainAccess.shared.clearKeychains()
+                KeychainAccess.shared.setDeviceToken(device_token: device_token)
                 let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let viewController = mainStoryboard.instantiateViewController(withIdentifier: "login")
                 UIApplication.shared.keyWindow?.rootViewController = viewController
