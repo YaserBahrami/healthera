@@ -37,7 +37,7 @@ extension HealtheraService: TargetType {
         switch self {
        
         case .login(let userName, let password):
-            return .requestParameters(parameters: ["username" : userName, "user_password": password, "device_token" : KeychainAccess.shared.getDeviceToken() ], encoding: URLEncoding.queryString)
+            return .requestParameters(parameters: ["username": userName, "user_password": password, "device_token": KeychainAccess.shared.getDeviceToken()], encoding: JSONEncoding.default)
         }
     }
     
