@@ -14,11 +14,16 @@ class AdherencesTableViewCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        logo.layer.cornerRadius = logo.bounds.width / 2
+        
+        logo.contentMode = .scaleAspectFill
+        logo.layer.cornerRadius = logo.frame.height / 2
+        logo.layer.masksToBounds = false
         logo.clipsToBounds = true
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

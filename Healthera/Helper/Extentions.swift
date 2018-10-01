@@ -29,3 +29,16 @@ extension UIButton{
          self.layer.cornerRadius = CGFloat(radius)
     }
 }
+
+extension Date {
+    func NextDays(DayToAdd: Int)-> Date{
+        return Calendar.current.date(byAdding: .day, value: DayToAdd, to: noon)!
+    }
+    func PreviousDays(DayToMinus: Int)-> Date{
+        return Calendar.current.date(byAdding: .day, value: DayToMinus, to: noon)!
+    }
+   
+    var noon: Date {
+        return Calendar.current.date(bySettingHour: 12, minute: 0, second: 0, of: self)!
+    }
+}

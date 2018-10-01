@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oEr-AI-tN6">
-                        <rect key="frame" x="64" y="19" width="193" height="41"/>
+                        <rect key="frame" x="49" y="19" width="210" height="46"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="8:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc6-cM-Ddr">
                                 <rect key="frame" x="0.0" y="0.0" width="66" height="20.5"/>
@@ -29,36 +29,40 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is test data" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JSC-Tg-b7a">
-                                <rect key="frame" x="0.0" y="25.5" width="121" height="15.5"/>
+                                <rect key="frame" x="0.0" y="25.5" width="121" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tablets" translatesAutoresizingMaskIntoConstraints="NO" id="E4Y-9K-GXR">
-                        <rect key="frame" x="16" y="19" width="40" height="41.5"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="40" id="FmG-Na-0Qr"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNc-6o-UZ8">
                         <rect key="frame" x="267" y="11" width="45" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.5" id="7w6-hf-4cO"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.060146555300000001" green="0.65226745610000003" blue="0.32820084690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tablets" translatesAutoresizingMaskIntoConstraints="NO" id="E4Y-9K-GXR">
+                        <rect key="frame" x="16" y="28" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="mc8-Sp-lKL"/>
+                            <constraint firstAttribute="height" constant="25" id="td5-vY-MJj"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="E4Y-9K-GXR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0bG-Qh-0ZQ"/>
-                    <constraint firstItem="E4Y-9K-GXR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="23q-Lr-RFa"/>
-                    <constraint firstItem="oEr-AI-tN6" firstAttribute="leading" secondItem="E4Y-9K-GXR" secondAttribute="trailing" constant="8" id="GTi-v4-0kL"/>
-                    <constraint firstItem="E4Y-9K-GXR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="NLd-CS-Uii"/>
-                    <constraint firstItem="qNc-6o-UZ8" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ulk-ND-T9N"/>
-                    <constraint firstItem="oEr-AI-tN6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="aMw-tU-R0a"/>
-                    <constraint firstItem="qNc-6o-UZ8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="drK-cm-whl"/>
-                    <constraint firstItem="qNc-6o-UZ8" firstAttribute="leading" secondItem="oEr-AI-tN6" secondAttribute="trailing" constant="10" id="j0u-bR-9CW"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="oEr-AI-tN6" secondAttribute="bottom" constant="9" id="kke-JC-phy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="oEr-AI-tN6" secondAttribute="bottom" constant="4" id="B4j-P2-s5d"/>
+                    <constraint firstItem="qNc-6o-UZ8" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="NhJ-O6-F78"/>
+                    <constraint firstItem="qNc-6o-UZ8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="UG3-0n-fB6"/>
+                    <constraint firstItem="E4Y-9K-GXR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fVb-RZ-sFm"/>
+                    <constraint firstItem="oEr-AI-tN6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="jjP-xf-HUb"/>
+                    <constraint firstItem="qNc-6o-UZ8" firstAttribute="leading" secondItem="oEr-AI-tN6" secondAttribute="trailing" constant="8" id="jmN-xu-gVF"/>
+                    <constraint firstItem="E4Y-9K-GXR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17" id="uCd-C0-qAa"/>
+                    <constraint firstItem="oEr-AI-tN6" firstAttribute="leading" secondItem="E4Y-9K-GXR" secondAttribute="trailing" constant="8" id="uRX-w9-W0i"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="E4Y-9K-GXR" secondAttribute="bottom" constant="16" id="vTj-Vp-Msf"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -68,17 +72,10 @@
                 <outlet property="statusLabel" destination="qNc-6o-UZ8" id="mTg-rS-Rfq"/>
                 <outlet property="timeLabel" destination="Cc6-cM-Ddr" id="4cW-T0-WIB"/>
             </connections>
-            <point key="canvasLocation" x="132.80000000000001" y="142.1289355322339"/>
+            <point key="canvasLocation" x="120" y="83"/>
         </tableViewCell>
-        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="f0Q-jX-yds">
-            <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <nil key="textColor"/>
-            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-            <textInputTraits key="textInputTraits"/>
-        </textField>
     </objects>
     <resources>
-        <image name="tablets" width="380" height="380"/>
+        <image name="tablets" width="100" height="100"/>
     </resources>
 </document>

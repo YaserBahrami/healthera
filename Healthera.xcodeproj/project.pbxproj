@@ -11,7 +11,6 @@
 		4396EC312160F19B008C4688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC302160F19B008C4688 /* AppDelegate.swift */; };
 		4396EC332160F19B008C4688 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC322160F19B008C4688 /* LoginViewController.swift */; };
 		4396EC362160F19B008C4688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396EC342160F19B008C4688 /* Main.storyboard */; };
-		4396EC382160F19E008C4688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4396EC372160F19E008C4688 /* Assets.xcassets */; };
 		4396EC3B2160F19E008C4688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396EC392160F19E008C4688 /* LaunchScreen.storyboard */; };
 		4396EC462160F19F008C4688 /* HealtheraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC452160F19F008C4688 /* HealtheraTests.swift */; };
 		4396EC512160F19F008C4688 /* HealtheraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC502160F19F008C4688 /* HealtheraUITests.swift */; };
@@ -20,6 +19,11 @@
 		4396EC6B21612CAD008C4688 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396EC6A21612CAD008C4688 /* NetworkProvider.swift */; };
 		439A50BC21613DA300CE4297 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50BB21613DA300CE4297 /* Result.swift */; };
 		439A50BE21613DC600CE4297 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50BD21613DC600CE4297 /* AuthenticationService.swift */; };
+		439A50C121624EEB00CE4297 /* AdherencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50BF21624EEB00CE4297 /* AdherencesTableViewCell.swift */; };
+		439A50C221624EEB00CE4297 /* AdherencesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 439A50C021624EEB00CE4297 /* AdherencesTableViewCell.xib */; };
+		439A50C421625CF800CE4297 /* AdherencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50C321625CF800CE4297 /* AdherencesViewController.swift */; };
+		439A50C62162892800CE4297 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50C52162892800CE4297 /* LoginModel.swift */; };
+		439A50C82162D35000CE4297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439A50C72162D34F00CE4297 /* Assets.xcassets */; };
 		68748CCE790912FC58E1D605 /* Pods_Healthera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781DB61134AC01342D7D7822 /* Pods_Healthera.framework */; };
 		7C9EA700E55F2FE7263AFAA5 /* Pods_HealtheraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D026C2FC51EB763A66F78 /* Pods_HealtheraTests.framework */; };
 /* End PBXBuildFile section */
@@ -48,7 +52,6 @@
 		4396EC302160F19B008C4688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4396EC322160F19B008C4688 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4396EC352160F19B008C4688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4396EC372160F19E008C4688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4396EC3A2160F19E008C4688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4396EC3C2160F19E008C4688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4396EC412160F19F008C4688 /* HealtheraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealtheraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +66,11 @@
 		4396EC6C216132A4008C4688 /* Healthera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Healthera.entitlements; sourceTree = "<group>"; };
 		439A50BB21613DA300CE4297 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		439A50BD21613DC600CE4297 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		439A50BF21624EEB00CE4297 /* AdherencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdherencesTableViewCell.swift; sourceTree = "<group>"; };
+		439A50C021624EEB00CE4297 /* AdherencesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdherencesTableViewCell.xib; sourceTree = "<group>"; };
+		439A50C321625CF800CE4297 /* AdherencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdherencesViewController.swift; sourceTree = "<group>"; };
+		439A50C52162892800CE4297 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		439A50C72162D34F00CE4297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61D04A7D88AE1255C8FE1CA4 /* Pods-HealtheraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraTests/Pods-HealtheraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F42E0CC40CC0F8FEBAAB336 /* Pods-HealtheraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraUITests/Pods-HealtheraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		781DB61134AC01342D7D7822 /* Pods_Healthera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +140,7 @@
 				4396EC5F2160F89C008C4688 /* View */,
 				4396EC612160F8BE008C4688 /* Controller */,
 				4396EC302160F19B008C4688 /* AppDelegate.swift */,
-				4396EC372160F19E008C4688 /* Assets.xcassets */,
+				439A50C72162D34F00CE4297 /* Assets.xcassets */,
 				4396EC392160F19E008C4688 /* LaunchScreen.storyboard */,
 				4396EC3C2160F19E008C4688 /* Info.plist */,
 			);
@@ -160,6 +168,7 @@
 		4396EC5E2160F897008C4688 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				439A50C52162892800CE4297 /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				4396EC342160F19B008C4688 /* Main.storyboard */,
+				439A50BF21624EEB00CE4297 /* AdherencesTableViewCell.swift */,
+				439A50C021624EEB00CE4297 /* AdherencesTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				4396EC322160F19B008C4688 /* LoginViewController.swift */,
+				439A50C321625CF800CE4297 /* AdherencesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -336,7 +348,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4396EC3B2160F19E008C4688 /* LaunchScreen.storyboard in Resources */,
-				4396EC382160F19E008C4688 /* Assets.xcassets in Resources */,
+				439A50C221624EEB00CE4297 /* AdherencesTableViewCell.xib in Resources */,
+				439A50C82162D35000CE4297 /* Assets.xcassets in Resources */,
 				4396EC362160F19B008C4688 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,7 +463,10 @@
 				4396EC312160F19B008C4688 /* AppDelegate.swift in Sources */,
 				439A50BC21613DA300CE4297 /* Result.swift in Sources */,
 				4396EC66216122C9008C4688 /* Extentions.swift in Sources */,
+				439A50C62162892800CE4297 /* LoginModel.swift in Sources */,
+				439A50C121624EEB00CE4297 /* AdherencesTableViewCell.swift in Sources */,
 				4396EC6B21612CAD008C4688 /* NetworkProvider.swift in Sources */,
+				439A50C421625CF800CE4297 /* AdherencesViewController.swift in Sources */,
 				439A50BE21613DC600CE4297 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
