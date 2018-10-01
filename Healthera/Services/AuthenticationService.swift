@@ -28,7 +28,7 @@ class AuthenticationService{
                     let error = jsonObj["error"]["text"].stringValue
                     if error != ""{
                         print("network req failed: \(error)")
-                        callBack(Result.failure)
+                        callBack(Result.failure(Value: error))
                         
                     }else{
                         let model = LoginModel(json: jsonObj)
@@ -37,7 +37,7 @@ class AuthenticationService{
                 }
             case let .failure(error):
                 print("network req failed: \(error.localizedDescription)")
-                callBack(Result.failure)
+                callBack(Result.failure(Value: error.localizedDescription))
             }
         }
 
