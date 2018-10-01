@@ -10,5 +10,5 @@ import Foundation
 
 enum Result<T> {
     case success(value: T)
-    case failure
+    case failure(Value: String)
 }
