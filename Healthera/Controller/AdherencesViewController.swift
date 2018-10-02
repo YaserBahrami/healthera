@@ -9,7 +9,8 @@
 import UIKit
 
 class AdherencesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    @IBOutlet var notesView: UIView!
+    
     @IBOutlet weak var welcome: UILabel!
     @IBOutlet weak var adherencesTableView: UITableView!
     @IBOutlet weak var DateLabel: UILabel!
@@ -31,6 +32,7 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
         self.adherencesTableView.separatorStyle = .none
         self.adherencesTableView.backgroundColor = UIColor.clear
         
+        notesView.layer.cornerRadius = 10
 
     }
     
@@ -142,6 +144,34 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
         let v = UIView()
         v.backgroundColor = UIColor.clear
         return v
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var remedy_id = tableData[indexPath.section].remedy_id
+        var patient_id = KeychainAccess.shared.getUserId()
+        
+        //fetch data
+        showPopUp()
+        
+    }
+    
+    func showPopUp(){
+        self.view.addSubview(notesView)
+        notesView.center = self.view.center
+        
+        notesView.alpha = 0
+        UIView.animate(withDuration: 0.4) {
+            self.notesView.alpha = 1
+            self.view.alpha = 0.5
+        }
+    }
+    func removePopUp(){
+        UIView.animate(withDuration: 0.3) {
+            self.notesView.alpha = 0
+            self.view.alpha = 1
+            self.notesView.removeFromSuperview()
+            
+        }
     }
     
     @IBAction func logOut(_ sender: Any) {
