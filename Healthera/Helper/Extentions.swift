@@ -30,6 +30,8 @@ extension UIButton{
     }
 }
 
+
+
 extension Date {
     func NextDays(DayToAdd: Int)-> Date{
         return Calendar.current.date(byAdding: .day, value: DayToAdd, to: noon)!
@@ -40,5 +42,42 @@ extension Date {
    
     var noon: Date {
         return Calendar.current.date(bySettingHour: 12, minute: 0, second: 0, of: self)!
+    }
+    
+    var startOfDay: Date {
+        return Calendar.current.startOfDay(for: self)
+    }
+    
+    var endOfDay: Date {
+        var components = DateComponents()
+        components.day = 1
+        components.second = -1
+        return Calendar.current.date(byAdding: components, to: startOfDay)!
+    }
+    
+    public enum MonthNameStyle {
+        /// 3 letter month abbreviation of month name.
+        case threeLetters
+        /// 1 letter month abbreviation of month name.
+        case oneLetter
+        /// Full month name.
+        case full
+    }
+    
+    public func monthName(ofStyle style: MonthNameStyle = .threeLetters) -> String {
+        
+        let dateFormatter = DateFormatter()
+        var format: String {
+            switch style {
+            case .oneLetter:
+                return "MMMMM"
+            case .threeLetters:
+                return "MMM"
+            case .full:
+                return "MMMM"
+            }
+        }
+        dateFormatter.setLocalizedDateFormatFromTemplate(format)
+        return dateFormatter.string(from: self)
     }
 }
