@@ -125,8 +125,15 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
         
         let date = Date(timeIntervalSince1970: TimeInterval(tableData[indexPath.section].alarm_time!))
         let calendar = Calendar.current
-        let hour = calendar.component(.hour, from: date)
-        cell.timeLabel.text = "\(hour)"
+        var hour = calendar.component(.hour, from: date)
+        
+        if hour < 12 {
+            cell.timeLabel.text = "\(hour) AM."
+        }else{
+            hour = hour - 12
+            cell.timeLabel.text = "\(hour) PM."
+
+        }
         
         return cell
     }
