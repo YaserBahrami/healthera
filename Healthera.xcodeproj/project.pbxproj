@@ -24,6 +24,8 @@
 		439A50C421625CF800CE4297 /* AdherencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50C321625CF800CE4297 /* AdherencesViewController.swift */; };
 		439A50C62162892800CE4297 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50C52162892800CE4297 /* LoginModel.swift */; };
 		439A50C82162D35000CE4297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439A50C72162D34F00CE4297 /* Assets.xcassets */; };
+		439A50CA2162F1DD00CE4297 /* AdherencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50C92162F1DD00CE4297 /* AdherencesService.swift */; };
+		439A50CC216306FD00CE4297 /* AdherencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A50CB216306FD00CE4297 /* AdherencesModel.swift */; };
 		68748CCE790912FC58E1D605 /* Pods_Healthera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781DB61134AC01342D7D7822 /* Pods_Healthera.framework */; };
 		7C9EA700E55F2FE7263AFAA5 /* Pods_HealtheraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D026C2FC51EB763A66F78 /* Pods_HealtheraTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,8 @@
 		439A50C321625CF800CE4297 /* AdherencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdherencesViewController.swift; sourceTree = "<group>"; };
 		439A50C52162892800CE4297 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		439A50C72162D34F00CE4297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		439A50C92162F1DD00CE4297 /* AdherencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdherencesService.swift; sourceTree = "<group>"; };
+		439A50CB216306FD00CE4297 /* AdherencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdherencesModel.swift; sourceTree = "<group>"; };
 		61D04A7D88AE1255C8FE1CA4 /* Pods-HealtheraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraTests/Pods-HealtheraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F42E0CC40CC0F8FEBAAB336 /* Pods-HealtheraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealtheraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealtheraUITests/Pods-HealtheraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		781DB61134AC01342D7D7822 /* Pods_Healthera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				439A50C52162892800CE4297 /* LoginModel.swift */,
+				439A50CB216306FD00CE4297 /* AdherencesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 			children = (
 				4396EC6A21612CAD008C4688 /* NetworkProvider.swift */,
 				439A50BD21613DC600CE4297 /* AuthenticationService.swift */,
+				439A50C92162F1DD00CE4297 /* AdherencesService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -459,7 +465,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4396EC332160F19B008C4688 /* LoginViewController.swift in Sources */,
+				439A50CA2162F1DD00CE4297 /* AdherencesService.swift in Sources */,
 				4396EC6921612BDC008C4688 /* KeychainAccess.swift in Sources */,
+				439A50CC216306FD00CE4297 /* AdherencesModel.swift in Sources */,
 				4396EC312160F19B008C4688 /* AppDelegate.swift in Sources */,
 				439A50BC21613DA300CE4297 /* Result.swift in Sources */,
 				4396EC66216122C9008C4688 /* Extentions.swift in Sources */,

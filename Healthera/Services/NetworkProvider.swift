@@ -12,6 +12,7 @@ import Moya
 enum HealtheraService {
     case login(userName: String, password: String)
     case logout()
+    case getAdherences(start: Int, end: Int)
 }
 
 var clientId = "a4c7fdd994b14c0758e91dc997426f043868d4305702f4484220df51d56497b3"
@@ -26,6 +27,10 @@ extension HealtheraService: TargetType {
             return "tokens"
         case .logout:
             return "tokens"
+//        case .getAdherences(let start, let end):
+//            return "patients/\(KeychainAccess.shared.getUserId())/adherences?start=\(start)&end=\(end)"
+        case .getAdherences(let start, let end):
+            return "patients/\(KeychainAccess.shared.getUserId())/adherences"
         }
     }
     var method: Moya.Method {
@@ -35,6 +40,8 @@ extension HealtheraService: TargetType {
             return .post
         case .logout:
             return .delete
+        case .getAdherences(_, _):
+            return .get
         }
     }
     
@@ -45,6 +52,8 @@ extension HealtheraService: TargetType {
             return .requestParameters(parameters: ["username": userName, "user_password": password, "device_token": KeychainAccess.shared.getDeviceToken()], encoding: JSONEncoding.default)
         case .logout:
             return .requestPlain
+        case .getAdherences(let start, let end):
+            return .requestParameters(parameters: ["start": start, "end": end], encoding: URLEncoding.queryString)
         }
     }
     

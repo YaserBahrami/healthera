@@ -12,17 +12,25 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
 
     @IBOutlet weak var welcome: UILabel!
     @IBOutlet weak var adherencesTableView: UITableView!
+    @IBOutlet weak var DateLabel: UILabel!
+    
+    var scrollDate = 0
+    
+    var tableData = [AdherencesModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         welcomeText()
+        setDateLabel()
+        getAdherencesOfDay()
         
-
         let nib = UINib.init(nibName: "AdherencesTableViewCell", bundle: nil)
         self.adherencesTableView.register(nib, forCellReuseIdentifier: "MyCustomCell")
 
         self.adherencesTableView.separatorStyle = .none
         self.adherencesTableView.backgroundColor = UIColor.clear
+        
 
     }
     
@@ -42,9 +50,52 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
             welcome.text = "Good Night!"
         }
     }
+    func setDateLabel(){
+        var date = Date()
+        
+        
+        if scrollDate > 0 {
+                date = date.NextDays(DayToAdd: scrollDate)
+        }else{
+                date = date.PreviousDays(DayToMinus: scrollDate)
+        }
+        
+        let calender = Calendar.current
+        let day = calender.dateComponents([.day], from: date).day
+        
+        if scrollDate == 0 {
+            DateLabel.text = "Today, " + date.monthName() + " " + "\( day!)"
+        }else{
+            DateLabel.text = date.monthName() + " " + "\(day!)"
+        }
+    }
+    func getAdherencesOfDay(){
+        var date = Date()
+        if scrollDate > 0 {
+            date = date.NextDays(DayToAdd: scrollDate)
+        }else{
+            date = date.PreviousDays(DayToMinus: scrollDate)
+        }
+        
+        let start = date.startOfDay.timeIntervalSince1970
+        let end = date.endOfDay.timeIntervalSince1970
+        print(start)
+        print(end)
+        
+        AdherencesService.shared.getAdherences(start: Int(start), end: Int(end)) { (result) in
+            switch result {
+            case .success(let value):
+                self.tableData = value
+                self.adherencesTableView.reloadData()
+            case .failure(let error):
+                print("error")
+            }
+        }
+        
+    }
     
     public func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return tableData.count
         
     }
     
@@ -63,6 +114,19 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! AdherencesTableViewCell
+        
+        if tableData[indexPath.section].note != ""{
+           cell.infoLabel.text = tableData[indexPath.section].note
+        }else{
+            cell.infoLabel.text = "data not providen"
+        }
+        
+        cell.statusLabel.text = tableData[indexPath.section].action
+        
+        let date = Date(timeIntervalSince1970: TimeInterval(tableData[indexPath.section].alarm_time!))
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        cell.timeLabel.text = "\(hour)"
         
         return cell
     }
@@ -86,8 +150,17 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
                 UIApplication.shared.keyWindow?.rootViewController = viewController
             }
         }
-        
-        
     }
     
+    @IBAction func previousDay(_ sender: Any) {
+        scrollDate = scrollDate - 1
+        setDateLabel()
+        getAdherencesOfDay()
+    }
+    
+    @IBAction func nextDay(_ sender: Any) {
+        scrollDate = scrollDate + 1
+        setDateLabel()
+        getAdherencesOfDay()
+    }
 }
