@@ -19,6 +19,13 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var tableData = [AdherencesModel]()
     
+    @IBOutlet weak var popLabel1: UILabel!
+    @IBOutlet weak var popLabel2: UILabel!
+    
+    @IBOutlet weak var note: UITextView!
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +39,11 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
         self.adherencesTableView.separatorStyle = .none
         self.adherencesTableView.backgroundColor = UIColor.clear
         
-        notesView.layer.cornerRadius = 10
+        
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dissmissPopup))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
 
     }
     
@@ -151,29 +162,53 @@ class AdherencesViewController: UIViewController, UITableViewDelegate, UITableVi
         var patient_id = KeychainAccess.shared.getUserId()
         
         //fetch data
-        showPopUp()
+    
+        AdherencesService.shared.getSpecificRemedy(pId: patient_id, rId: remedy_id!) { result in
+            switch result {
+            case .success(let value):
+                self.showPopUp(status: self.tableData[indexPath.section].action!, note: self.tableData[indexPath.section].note!, name: value.medicine_name!, type: value.medicine_type!)
+                
+            case .failure(let error):
+                print("error")
+            }
+        }
         
     }
     
-    func showPopUp(){
+    func showPopUp(status: String, note: String, name: String, type: String){
         self.view.addSubview(notesView)
-        notesView.center = self.view.center
         
+        /*
+         popLabel1: UILabel!
+         @IBOutlet weak var popLabel2: UILabel!
+         
+         @IBOutlet weak var note: UITextView!
+         @IBOutlet weak var statusLabel: U
+         */
+        
+        self.popLabel1.text = name
+        self.popLabel2.text = type
+        self.note.text = note
+        self.statusLabel.text = status
+        
+        notesView.center = self.view.center
+        notesView.layer.cornerRadius = 10
+
         notesView.alpha = 0
         UIView.animate(withDuration: 0.4) {
             self.notesView.alpha = 1
-            self.view.alpha = 0.5
-        }
-    }
-    func removePopUp(){
-        UIView.animate(withDuration: 0.3) {
-            self.notesView.alpha = 0
-            self.view.alpha = 1
-            self.notesView.removeFromSuperview()
+            self.adherencesTableView.isUserInteractionEnabled = false
             
         }
     }
-    
+    @objc func dissmissPopup(){
+        UIView.animate(withDuration: 0.3) {
+            self.notesView.alpha = 0
+            self.notesView.removeFromSuperview()
+            self.adherencesTableView.isUserInteractionEnabled = true
+            
+        }
+    }
     @IBAction func logOut(_ sender: Any) {
         
         

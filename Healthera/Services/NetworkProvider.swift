@@ -13,6 +13,7 @@ enum HealtheraService {
     case login(userName: String, password: String)
     case logout()
     case getAdherences(start: Int, end: Int)
+    case getRemedy(patientId: String, remedyId: String)
 }
 
 var clientId = "a4c7fdd994b14c0758e91dc997426f043868d4305702f4484220df51d56497b3"
@@ -31,6 +32,8 @@ extension HealtheraService: TargetType {
 //            return "patients/\(KeychainAccess.shared.getUserId())/adherences?start=\(start)&end=\(end)"
         case .getAdherences(let start, let end):
             return "patients/\(KeychainAccess.shared.getUserId())/adherences"
+        case .getRemedy(let patientId, let remedyId):
+            return "patients/\(patientId)/remedies/\(remedyId)"
         }
     }
     var method: Moya.Method {
@@ -41,6 +44,8 @@ extension HealtheraService: TargetType {
         case .logout:
             return .delete
         case .getAdherences(_, _):
+            return .get
+        case .getRemedy(_, _):
             return .get
         }
     }
@@ -54,6 +59,8 @@ extension HealtheraService: TargetType {
             return .requestPlain
         case .getAdherences(let start, let end):
             return .requestParameters(parameters: ["start": start, "end": end], encoding: URLEncoding.queryString)
+        case .getRemedy(let patientId, let remedyId):
+            return .requestPlain
         }
     }
     

@@ -215,11 +215,16 @@
                     <connections>
                         <outlet property="DateLabel" destination="bkP-DW-cP1" id="wsV-p2-kgV"/>
                         <outlet property="adherencesTableView" destination="PLx-Yx-HCg" id="Y1B-PX-7Dp"/>
+                        <outlet property="note" destination="uS4-yC-NEr" id="Prn-fT-J6J"/>
                         <outlet property="notesView" destination="xH2-7V-cFW" id="4iv-ln-fZH"/>
+                        <outlet property="popLabel1" destination="feB-p2-p5T" id="jcf-qU-RFY"/>
+                        <outlet property="popLabel2" destination="TZ9-9s-5Pn" id="ehW-0R-Wwg"/>
+                        <outlet property="statusLabel" destination="1W5-Xg-tGQ" id="SM8-5F-iFj"/>
                         <outlet property="welcome" destination="p8Y-JV-iQq" id="c83-7h-69D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3r-p2-sv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ihq-k8-6PT"/>
                 <view contentMode="scaleAspectFill" id="xH2-7V-cFW">
                     <rect key="frame" x="0.0" y="0.0" width="281" height="365"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

@@ -53,5 +53,35 @@ class AdherencesService{
         }
     }
     
+    func getSpecificRemedy(pId: String, rId: String, callBack: @escaping (Result<RemedyModel>) -> Void){
+        provider.request(.getRemedy(patientId: pId, remedyId: rId)) { (result) in
+            switch result{
+            case let .success(moyaResponse):
+                let data = moyaResponse.data // Data, your JSON response is probably in here!
+                let statusCode = moyaResponse.statusCode // Int - 200, 401, 500, etc
+                var jsonObj = JSON(data)
+                if statusCode == 200{
+                    
+                    let error = jsonObj["error"]["text"].stringValue
+                    if error != ""{
+                        print("network req failed: \(error)")
+                        callBack(Result.failure(Value: error))
+                        
+                    }else{
+                        jsonObj = jsonObj["data"][0]
+                        let model = RemedyModel(json: jsonObj)
+                        print(model?.medicine_name)
+                        print(model?.medicine_type)
+                        print("////")
+                        callBack(Result.success(value: model!))
+                    }
+                }
+            case let .failure(error):
+                print("network req failed: \(error.localizedDescription)")
+                callBack(Result.failure(Value: error.localizedDescription))
+            }
+        }
+    }
+    
     
 }
